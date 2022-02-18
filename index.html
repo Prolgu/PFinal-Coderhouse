@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+  <html lang="es">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Landing page web developmnet about me" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- googleapis -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,700&family=Nunito:wght@300;400;700;800;900&family=Open+Sans:wght@300;400;700&family=Overlock:wght@400;700&family=Poppins:ital,wght@0,700;0,800;0,900;1,400&family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.0/sandstone/bootstrap.css" type="text/css" media="all"> -->
+   <!-- me -->
+  <link rel="icon" href="./assets/img/285695_terminal_icon.svg"/>
+  <link rel="stylesheet" href="assets/scss/master.css">
+   <!-- me -->
+  <title> Proyecto Anthem </title>
+ </head>
+
+ <body>
+  <div class="main-wrapper" id="webtop">
+   <div class="main-back main-wrapper"> </div>
+
+   <header class="header header-nav">
+    <nav class="navbar">
+     <h2 class="header-logo-text nav-logo">Anthem<span class="logo-props">LIBROS</span></h2>
+     <!-- <ul class="nav-mnu"> -->
+     <!--  <li class="nav-itm"> -->
+     <!--   <a href="#ingreso" class="nav-lnk">Ingreso</a> -->
+     <!--  </li> -->
+     <!--  <li class="nav-itm"> -->
+     <!--   <a href="#listado" class="nav-lnk">Listado</a> -->
+     <!--  </li> -->
+     <!-- </ul> -->
+     <!-- <div class="hamburger"> -->
+     <!--  <span class="bar"></span> -->
+     <!--  <span class="bar"></span> -->
+     <!--  <span class="bar"></span> -->
+     <!-- </div> -->
+     <!--  <a href="#" class="cart-link"> -->
+     <!--  <div class="cart"> -->
+     <!--   <span class="count">5</span> -->
+     <!--   <i class="iconify white1 cart-icon" data-icon="gridicons:cart"></i> -->
+     <!--  </div> -->
+     <!-- </a> -->
+    <!-- </nav> -->
+
+      <div class="cart">
+       <span class="count" id="counter">0</span>
+       <i class="iconify white1 cart-icon" data-icon="gridicons:cart"></i>
+      </div>
+   </header>
+
+   <main id="main">
+
+    <section class="main-section-uno main-wrapper">
+     <article  id="ingreso" class="about-section centered-text container fake-glass">
+      <div class="input-holder">
+       <p class="white1">Busqueda por titulo, autor o genero</p>
+       <form id="search-form">
+        <input type="text" placeholder="Buscar..." id="search-input" class="search-input" spellcheck="false">
+         <!-- <select name="" id="search-select"> -->
+         <!--  <option value="titulo">Titulo</option> --> 
+         <!--  <option value="autor">Autor</option> --> 
+         <!--  <option value="genero">Genero</option> --> 
+         <!-- </select> -->
+        <button id="btn-act1" type="submit" class="btn btn-mini" >
+         <span class="iconify" data-icon="akar-icons:search"></span>
+        </button>
+       </form>
+      </div>
+
+      <table class="table">
+       <thead class="thead-dark">
+        <tr>
+         <th scope="col" class="header__item">Nombre</th>
+         <th scope="col" class="header__item">Autor</th>
+         <th scope="col" class="header__item">Genero</th>
+         <th scope="col" class="header__item">Precio</th>
+        </tr>
+       </thead>
+       <tbody id="table" class="">
+       </tbody>
+      </table>
+     </article>
+    </section>
+
+    <section class="main-section-dos main-wrapper">
+     <article id="listado" class="contact centered-text container fake-glass">
+     </article>
+    </section>
+
+    <a class="footer-nav arrow-up" href="#" id="arrowUp">
+     <span class="iconify chev-up" data-icon="fa:chevron-circle-up"></span>
+    </a>
+   </main>
+
+   <footer class="footer">
+    <div class="footer-message">
+     <p>i use <span class="iconify arch-logo" data-icon="file-icons:arch-linux"></span> btw</p>
+
+    </div>
+    <div class="media">
+     <a href="https://www.instagram.com/matt_mjolner/" target="_blank" alt="instagram_link">
+      <span class="iconify fa fa-instagram" data-icon="akar-icons:instagram-fill"></span>
+     </a>
+     <a href="https://github.com/Prolgu" target="_blank" alt="github_link">
+      <span class="iconify fa fa-github" data-icon="fa-brands:github"></span>
+     </a>
+     <a href="https://www.linkedin.com/in/matiasbonina" target="_blank" alt="linkedin_logo">
+      <span class="iconify fa fa-linkedin" data-icon="fa-brands:linkedin-in"></span>
+     </a>
+    </div>
+   </footer>
+  </div>
+
+  <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  <script src="assets/js/master.js" charset="utf-8"></script>
+  <script src="assets/js/pageEvents.js" charset="utf-8"></script>
+  <!-- <script src="assets/js/other.js" charset="utf-8"></script> -->
+  <!-- <script src="assets/js/handleGlass.js" charset="utf-8></script> -->
+ </body>
+</html>

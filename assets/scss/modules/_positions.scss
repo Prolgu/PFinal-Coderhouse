@@ -1,0 +1,29 @@
+$positions:(
+    relative:relative,
+    absolute:absolute,
+    fixed:fixed,
+    sticky:sticky,
+    fleft:left,
+    fright:right,
+    fnone:none,
+);
+
+//$prop es lo que está a la derecha del $name
+@each $name, $prop in $positions {
+    $i: index($positions, $name $prop);
+    @if($i <= 4){
+        %#{$name} {
+            position: #{$prop};
+        }
+        .#{$name} {
+           @extend %#{$name};
+        }
+    }@else {
+        %#{$name} {
+            float: #{$prop};
+        }
+        .#{$name} {
+           @extend %#{$name};
+        }
+    }
+}

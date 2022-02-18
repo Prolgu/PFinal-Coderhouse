@@ -1,0 +1,32 @@
+
+//===================================
+.arrow-up {
+    position:fixed;
+    right:1%;
+    bottom:10%;
+    z-index:999;
+    //oculto el botton
+    opacity: 0;
+    transform-origin: center bottom;
+    transform: scale(0) translate3d(0,-200%, 0);
+    //fin de oculto
+    //disparo la animación
+    animation: arrow-up .5s ease-in-out forwards;
+    .chev-up {
+        font-size:32px;
+        @extend %yell; 
+    }
+}
+
+@keyframes arrow-up {
+    0% {
+        bottom:0;
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        bottom:15%;
+        opacity: 1;
+        transform: scale(1);
+    }
+}

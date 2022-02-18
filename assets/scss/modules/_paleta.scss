@@ -1,0 +1,42 @@
+//map 
+/* Ejemplos:
+"blue":#513edc
+"grey-1":#f1f1f1,
+"grey-2":#cacaca,
+
+"dark":#090b13,
+*/ 
+
+$yell:#ffb300;
+$blue1:#34007f;
+
+$paleta:(
+    grey1:#455a64,
+    black1:#090b13,
+    white1:#fff,
+    blue1:#34007f,
+    skyb:#6900ff,
+    skyl:#b47fff,
+    yell:#ffb300,    
+);
+
+//recorro todos los colores (items) de $paleta (map) y genero las clases automáticamente
+//$name = nombre del color
+//$color = hexadecimal del color
+//$paleta = colección de colores
+@each $name, $color in $paleta {
+    %#{$name} {
+        color: #{$color};
+    }
+
+    .#{$name} {
+       @extend %#{$name};
+    }
+
+    %bg-#{$name} { background: #{$color};
+    }
+
+    .bg-#{$name} {
+        @extend %bg-#{$name};
+    }
+}

@@ -1,0 +1,64 @@
+//Side Menu con social Media
+
+.media-links{
+    padding: 5px; 
+    text-decoration: none;
+    @extend %white1;
+    font-size: 22px;
+}
+.fb{
+    .fb:hover{
+        color: #4dc247;
+        transition: all 0.5s ease;
+    } 
+}
+.ig{
+    .ig:hover{
+        color: #4dc247;
+        transition: all 0.5s ease;
+    } 
+}
+.wp{
+        &:hover{
+        color: #4dc247;
+        transition: all 0.5s ease;
+    } 
+}
+
+.media-wrapper{
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    z-index: 888;
+    transform: translateY(-50%);
+}
+.share{
+    width: 48px;
+    height: 48px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    .ico{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-size: 28px;
+    }
+}
+//================================================
+.share{ @extend %bg-black1; }
+.media-wrapper div:hover .ico-whatsapp {
+  color: #4dc247;
+  transition: all 0.5s ease;
+}
+.media-wrapper div:hover .ico-facebook {
+  color: #3b5998;
+  transition: all 0.5s ease;
+}
+.media-wrapper div:hover .ico-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
